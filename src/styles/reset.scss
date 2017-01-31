@@ -1,0 +1,14 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+  word-wrap: normal;
+}
+
+ul,
+li {
+  padding: 0;
+  width: 0;
+  list-style: none;
+}
+
+a {  text-decoration: none;}
+

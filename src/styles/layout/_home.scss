@@ -1,0 +1,150 @@
+
+
+.home {
+  color: $text-color;
+  font-family: 'Roboto', sans-serif;
+  font-size: calc(0.875em + .25 * (100vw - 80em) / 40);
+  font-size: -webkit-calc(87.5% + .25 * (100vw - 8000%) / 40);
+  text-align: center;
+
+
+  h1,
+  h2,
+  h3 {
+    font-family: 'Raleway', sans-serif;
+  }
+
+  h1 {
+    color: $jscolor;
+    font-size: 7.5vw;
+    font-weight: 200;
+    letter-spacing: .5vw;
+    padding: 2vw 0;
+
+    @include breakpoint(sm) { font-size: 5vw; }
+
+    @include breakpoint(md) { font-size: 4.2vw; }
+
+    @include breakpoint(lg) { font-size: 4vw; }
+
+    @include breakpoint(xlg) { font-size: 3vw; }
+  }
+
+  h2 {
+    font-size: 4vw;
+    letter-spacing: .2vw;
+
+    @include breakpoint(sm) { font-size: 3.2vw; }
+
+    @include breakpoint(md) { font-size: 2.5vw; }
+
+    @include breakpoint(lg) { font-size: 1.9vw; }
+
+    @include breakpoint(xlg) { font-size: 1.5vw; }
+  }
+
+  h3 {
+    color: $text-color-light;
+    font-size: 3.2vw;
+    line-height: 2em;
+
+    @include breakpoint(sm) { font-size: 2.5vw; }
+
+    @include breakpoint(md) { font-size: 1.8vw; }
+
+    @include breakpoint(lg) { font-size: 1.3vw; }
+
+    @include breakpoint(xlg) { font-size: 1.1vw; }
+
+    a {
+      color: $color-link;
+      margin: 2em 0;
+    }
+  }
+
+  header {
+    @include breakpoint(sm) {
+      margin: auto;
+      width: 95vw;
+    }
+  }
+
+  .calendar {
+    align-items: center;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 2rem;
+
+    &-item {
+        font-weight: 100;
+      background: $calendar-color;
+      border: solid .03rem $light;
+      color: $light;
+      display: flex;
+      -webkit-flex:1;
+      flex: 1;
+      flex-basis: auto;
+      flex-direction: column;
+      flex-grow: 1;
+      flex-shrink: 0;
+      font-size: 1.5rem;
+      justify-content: center;
+      padding: 1rem;
+      text-align: center;
+      transition: all .3s ease;
+      min-height: 30vw;
+      min-width: 100vw;
+
+
+      @include breakpoint(sm) {
+        min-height: 30vw;
+        min-width: 30vw;
+      }
+
+      @include breakpoint(md) {
+        min-height: 25vw;
+        min-width: 25vw;
+      }
+
+      @include breakpoint(xlg) {
+        min-height: 15vw;
+        min-width: 15vw;
+      }
+
+      &__date {
+        font-size: 5.5vw;
+        line-height: .9;
+
+        @include breakpoint(md) { font-size: 3.5vw; }
+
+        @include breakpoint(lg) { font-size: 3vw; }
+
+        @include breakpoint(xlg) { font-size: 2vw; }
+      }
+
+      &__text {
+        font-size: 3vw;
+        padding-top: 1rem;
+        font-weight: 100;
+
+        @include breakpoint(md) {font-size: 1.5vw; }
+
+        @include breakpoint(lg) { font-size: 2vw; }
+
+        @include breakpoint(xlg) { font-size: 1vw; }
+      }
+
+      &.done {
+        background: $calendar-color-done;
+        color: $dark;
+      }
+
+      &:hover {
+        opacity: .8;
+      }
+
+    }
+  }
+}
