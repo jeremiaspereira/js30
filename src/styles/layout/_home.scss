@@ -76,57 +76,59 @@
     flex-wrap: wrap;
     justify-content: center;
     margin-top: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    
 
     &-item {
-        font-weight: 100;
+      font-weight: 100;
       background: $calendar-color;
-      border: solid .03rem $light;
+      border-radius:10px;
+      margin: .5vw;
       color: $light;
-      display: flex;
-      -webkit-flex:1;
-      flex: 1;
-      flex-basis: auto;
-      flex-direction: column;
-      flex-grow: 1;
-      flex-shrink: 0;
+      padding: 1rem;
       font-size: 1.5rem;
       justify-content: center;
-      padding: 1rem;
       text-align: center;
       transition: all .3s ease;
-      min-height: 30vw;
-      min-width: 100vw;
 
 
       @include breakpoint(sm) {
-        min-height: 30vw;
-        min-width: 30vw;
+        height: 30vw;
+        width: 30vw;
       }
 
       @include breakpoint(md) {
-        min-height: 25vw;
-        min-width: 25vw;
+        height: 25vw;
+        width: 25vw;
       }
 
       @include breakpoint(xlg) {
-        min-height: 15vw;
-        min-width: 15vw;
+        height: 15vw;
+        width: 15vw;
       }
 
       &__date {
+        color: $text-color;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
         font-size: 5.5vw;
-        line-height: .9;
+        font-weight: 300;
 
         @include breakpoint(md) { font-size: 3.5vw; }
 
         @include breakpoint(lg) { font-size: 3vw; }
 
-        @include breakpoint(xlg) { font-size: 2vw; }
+        @include breakpoint(xlg) { font-size: 3vw; }
       }
 
       &__text {
+        color: $text-color-light;
+        position: relative;
+        top: 55%;
+        transform: translateY(-55%);
         font-size: 3vw;
-        padding-top: 1rem;
         font-weight: 100;
 
         @include breakpoint(md) {font-size: 1.5vw; }
