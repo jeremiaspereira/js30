@@ -91,11 +91,12 @@
       justify-content: center;
       text-align: center;
       transition: all .3s ease;
-
+      height: 30vw;
+      width: 100vw;
 
       @include breakpoint(sm) {
-        height: 30vw;
-        width: 30vw;
+        height: 40vw;
+        width: 40vw;
       }
 
       @include breakpoint(md) {
