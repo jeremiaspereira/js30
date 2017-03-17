@@ -29,7 +29,6 @@ function clean() {
 function styles() {
   return gulp.src(config.paths.styles.src + config.projectName + '.scss')
     .pipe(sassGlob())
-    .pipe(sass())
     .pipe(sass({outputStyle: 'expanded'}))
     .pipe(autoprefixer({ browsers: ['last 2 versions'] }))
     .pipe(cleanCSS())
