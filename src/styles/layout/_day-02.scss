@@ -1,26 +1,24 @@
 .day-02 {
   background:#018DED;
-  background-size:cover;
   font-family:'helvetica neue';
   text-align: center;
-  font-size: 10px;
 
   body {
-    font-size: 2rem;
     display:flex;
     flex:1;
-    min-height: 100vh;
+    min-height: 100%;
     align-items: center;
   }
 
   .clock {
-    width: 50rem;
-    height: 50rem;
+    width: 50vh;
+    height: 50vh;
     border:10px solid white;
     border-radius:50%;
-    margin:50px auto;
+    margin:auto;
     position: relative;
     padding:2rem;
+    transform: translateY(50%)
   }
 
   .clock-face {

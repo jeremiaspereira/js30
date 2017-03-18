@@ -1,12 +1,11 @@
 .day-05 {
-  box-sizing: border-box;
-  background:#ffc600;
-  font-family:'helvetica neue';
-  font-size: 20px;
-  font-weight: 200;
   
-  body {
+  body .main {
     margin: 0;
+    box-sizing: border-box;
+    font-family:'helvetica neue';
+    font-size: 20px;
+    font-weight: 200;
   }
 
   *, *:before, *:after {
@@ -14,7 +13,7 @@
   }
 
   .panels {
-    min-height:100vh;
+    min-height:100%;
     overflow: hidden;
     display: flex;
   }

@@ -1,23 +1,38 @@
 <!DOCTYPE html>
 <html lang="en" class="day-02">
-  <head>
-    <meta charset="UTF-8">
-    <title>JS + CSS Clock</title>
-    <link rel="stylesheet" href="../dist/styles/js-30.css">
-  </head>
 
-  <body>
-    <div class="clock">
-      <div class="clock-face">
-        <div class="hand hand-hour"></div>
-        <div class="hand hand-min"></div>
-        <div class="hand hand-second"></div>
+<head>
+  <meta charset="UTF-8">
+  <title>JS + CSS Clock</title>
+  <link rel="stylesheet" href="../lib/font-awesome-4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../dist/styles/js-30.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="header"></div>
+    <div class="main">
+      <div class="clock">
+        <div class="clock-face">
+          <div class="hand hand-hour"></div>
+          <div class="hand hand-min"></div>
+          <div class="hand hand-second"></div>
+        </div>
       </div>
     </div>
-  </body>
-  
-  <script src="../dist/scripts/js-30.js"></script>
-  <script>
-    day02();
-  </script>
+    <div class="footer">
+      <div class="inner-content">
+        <a href="/js30"><i class="fa fa-home" aria-hidden="true"></i></a>
+        <a href="https://github.com/jeremiaspereira/" target="_brank"><i class="fa fa-github" aria-hidden="true"></i></a>
+        <a href="https://jeremiaspereira.github.io" target="_brank"><i class="fa fa-bolt" aria-hidden="true"></i></a>
+      </div>
+    </div>
+  </div>
+</body>
+
+<script src="../dist/scripts/js-30.js"></script>
+<script>
+  day02();
+</script>
+
 </html>
